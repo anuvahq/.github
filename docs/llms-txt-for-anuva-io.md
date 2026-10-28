@@ -1,0 +1,40 @@
+# llms.txt for anuva.io
+
+This is the suggested `llms.txt` for the Anuva marketing site. Serve it as plain text at `https://anuva.io/llms.txt` once the site exists, following the [llms.txt proposal](https://llmstxt.org).
+
+It matches [`/llms.txt`](../llms.txt) in this repository. When the site has its own pages (features, pricing, docs, security), add them under `## Docs` and keep this file and the repository copy in sync.
+
+```markdown
+# Anuva
+
+> Anuva is an open-source applicant tracking system (ATS) for companies and recruiting agencies. It covers jobs and branded careers sites, multi-step applications, explainable CV screening (with optional AI using your own API key), a pipeline board, interviews, offers with e-signature, and privacy controls. The core is open core under AGPL-3.0 (public release planned); Anuva Cloud is in private beta, and Anuva can also be self-hosted.
+
+Key facts:
+
+- License: open core, AGPL-3.0 for the core. The source is not yet public; the release is being prepared.
+- Hosting: Anuva Cloud (private beta) or self-hosted with Docker and k3s.
+- Stack: FastAPI (Python), Postgres 18, Next.js 16, Docker, k3s.
+- Careers sites: one per company at `{slug}.careers.anuva.io` or a custom domain.
+- Screening: weighted criteria and a cutoff decide the result. Overrides need a written reason and are audited.
+- AI screening: bring your own key for OpenAI, Anthropic, OpenRouter, or any OpenAI-compatible endpoint. The model only returns per-criterion evidence from the CV; it never decides. Malformed model output goes to human review and is never auto-rejected.
+- Hiring workflow: pipeline board, owners and team workload, interviews and scorecards, PDF offer letters with e-signature (Anuva Sign, a self-hosted Documenso), candidate portal, reports (funnel, time to hire, source of hire).
+- Privacy and compliance: database per tenant, Postgres row-level security, data subject requests (DSAR), retention purge, tamper-evident hash-chained audit log, encrypted backups.
+- Multi-client operation: an operator console for agencies running hiring for several clients.
+
+## Docs
+
+- [Organization profile](https://github.com/anuvahq/.github/blob/main/profile/README.md): Overview of Anuva, features, how AI screening works, and comparison with closed ATS products
+- [Security policy](https://github.com/anuvahq/.github/blob/main/SECURITY.md): How to report vulnerabilities privately
+- [Contributing guide](https://github.com/anuvahq/.github/blob/main/CONTRIBUTING.md): How to propose changes and report issues
+
+## Links
+
+- [Anuva website](https://anuva.io): Product information and early access to Anuva Cloud
+- [GitHub organization](https://github.com/anuvahq): Source repositories and community files
+- [Anuva on LinkedIn](https://www.linkedin.com/company/anuva-consulting/): Company updates
+
+## Optional
+
+- [Code of conduct](https://github.com/anuvahq/.github/blob/main/CODE_OF_CONDUCT.md): Community standards
+- [Support](https://github.com/anuvahq/.github/blob/main/SUPPORT.md): Where to get help
+```
