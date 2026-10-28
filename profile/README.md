@@ -38,5 +38,6 @@ Anuva Cloud is in private beta with its first customers. The open-source core (A
 ## Get involved
 
 - Product questions and early access: [anuva.io](https://anuva.io)
+- Company updates: [Anuva on LinkedIn](https://www.linkedin.com/company/anuva-consulting/)
 - Security reports: see our [security policy](https://github.com/anuvahq/.github/blob/main/SECURITY.md)
 - Contributing: see the [contributing guide](https://github.com/anuvahq/.github/blob/main/CONTRIBUTING.md)
